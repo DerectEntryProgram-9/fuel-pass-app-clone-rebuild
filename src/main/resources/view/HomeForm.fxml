@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="572.0" prefWidth="730.0" style="-fx-background-color: white;" stylesheets="@../css/home-form.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <ImageView fx:id="imgLogo" fitHeight="65.0" fitWidth="284.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#imgLogoOnMouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane id="imgContainer" focusTraversable="true" layoutX="645.0" layoutY="10.0" onKeyReleased="#pneLoginOnKeyReleased" onMouseClicked="#pneLoginOnMouseClicked" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fx:id="pneLogin" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../image/lock.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FlowPane alignment="CENTER" hgap="20.0" layoutY="505.0" prefHeight="60.0" prefWidth="742.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Lanka-ioc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Lanka-ceypetco.png" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+      <AnchorPane fx:id="pneContainer" layoutY="87.0" prefHeight="409.0" prefWidth="730.0" style="-fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0" />
+   </children>
+</AnchorPane>
